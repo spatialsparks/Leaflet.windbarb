@@ -7,6 +7,7 @@ Demos
 * [Example](http://www.geonet.ch/leaflet-windbarb/) *(Mobile: Working on Samsung Galaxy s4)*
     
 Examples
+
 ![Image of wind barbs](https://github.com/JoranBeaufort/Leaflet.windbarb/blob/master/example/example.png)
 
 
