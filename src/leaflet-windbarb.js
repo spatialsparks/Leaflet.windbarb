@@ -21,7 +21,8 @@
             strokeWidth: 2,
             strokeLength: 15,
             barbSpaceing: 5,
-            barbHeight: 15
+            barbHeight: 15,
+            forceDir: false
         },
 
         initialize: function (options) {
@@ -56,7 +57,7 @@
         },
         
         _createBarbs: function(speed) {
-            var s, b, bn, bw, bh, bs, sw, sl, p, r, w, h, cx, cy, vb, xmlns, svg, g;
+            var s, b, bn, bw, bh, bs, sw, sl, p, r, w, h, cx, cy, vb, xmlns, svg, g, fd;
             s = speed,
             b = {5:0,10:0,50:0}
             bs = this.options.barbSpaceing,
@@ -64,6 +65,7 @@
             r = this.options.pointRadius,
             sw = this.options.strokeWidth,
             sl = this.options.strokeLength,
+            fd = this.options.forceDir,
             xmlns = "http://www.w3.org/2000/svg",
             svg = document.createElementNS (xmlns, "svg"),
             g = document.createElementNS (xmlns, "g");
@@ -116,8 +118,8 @@
             svg.setAttributeNS (null, "width", w);
             svg.setAttributeNS (null, "height", h);
             svg.appendChild (g);
-
-            if(bn!==0){
+            
+            if(fd === true){
                 var px, py, pt, M, H, L;
                 // set the x pointer
                 px = cx-r-sw*0.5,
@@ -129,8 +131,7 @@
                 H = px-sl,
                 // set the top x pointer
                 pt = H-(2*bs);                  
-
-                
+            
                 // draw first line
                 var path = document.createElementNS (xmlns, "path");
                     path.setAttributeNS (null, 'stroke', "#000000");
@@ -138,9 +139,34 @@
                     path.setAttributeNS (null, 'stroke-linecap', "butt");
                     path.setAttributeNS (null, 'd', 'M '+M+' H '+H);
                 g.appendChild(path);
-                
                 // update pointer
                 var px = H;
+            }
+            
+            if(bn!==0){
+                if(fd !== true){
+                    var px, py, pt, M, H, L;
+                    // set the x pointer
+                    px = cx-r-sw*0.5,
+                    // set the y pointer
+                    py = cy,                    
+                    // set first M
+                    M = px+','+py,
+                    // set first h
+                    H = px-sl,
+                    // set the top x pointer
+                    pt = H-(2*bs);                  
+                
+                    // draw first line
+                    var path = document.createElementNS (xmlns, "path");
+                        path.setAttributeNS (null, 'stroke', "#000000");
+                        path.setAttributeNS (null, 'stroke-width', sw);
+                        path.setAttributeNS (null, 'stroke-linecap', "butt");
+                        path.setAttributeNS (null, 'd', 'M '+M+' H '+H);
+                    g.appendChild(path);
+                    // update pointer
+                    var px = H;
+                }
                 
                 // Check if there is a 5kn barb
                 if(b[5]===1){

@@ -27,11 +27,12 @@ To include the plugin, just use leaflet-windbarb.js from the src folder:
 
 Generates a wind barb / wind arrow icon with the following options:
 
-    pointRadius - Radius of point in the middle; Default = 8,
-    strokeWidth - Stroke width; Default = 2,
-    strokeLength - Length of the main stroke, to which the barbs are connected; Default = 15,
-    barbSpaceing - Spacing between the barbs; Default = 5,
+    pointRadius - Radius of point in the middle; Default = 8
+    strokeWidth - Stroke width; Default = 2
+    strokeLength - Length of the main stroke, to which the barbs are connected; Default = 15
+    barbSpaceing - Spacing between the barbs; Default = 5
     barbHeight - Height of 10kn adn 50kn barbs, 5kn barbs will be 50%; Default = 15
+    forceDir - if set to "true" the direction will always be shown, even if speed < 2.5kn; Default = false
             
 #### Changelog
 
