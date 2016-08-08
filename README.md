@@ -3,6 +3,9 @@ A small Leaflet plugin to generate wind barbs / wind arrows
 
 Leaflet.idw generates wind barbs according to the wind barb standard shown [here] (https://commons.wikimedia.org/wiki/Wind_speed).
 
+### Requirements
+This plugin needs Leaflet version v1.0.0beta2 or above.
+
 Demos
 * [Example](http://www.geonet.ch/leaflet-windbarb/) *(Mobile: Working on Samsung Galaxy s4)*
     
