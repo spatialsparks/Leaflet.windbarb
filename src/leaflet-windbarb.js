@@ -269,6 +269,7 @@
                 img.style.width = anchor.x + 'px';
                 img.style.height = anchor.y + 'px';
             } else {
+                img.style.position = 'absolute';
                 var w,h;
                 w = h = 2*sw+2*r;
                 var x = w/2;
