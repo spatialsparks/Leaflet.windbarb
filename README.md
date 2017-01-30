@@ -39,7 +39,10 @@ Generates a wind barb / wind arrow icon with the following options:
             
 #### Changelog
 
-
+0.0.3 - January 30, 2017
+    
+    Updated to current Leaflet version (1.0.3). Fixed marker offset issue.
+    
 0.0.1 — May 28, 2016
 
     Initial release.
