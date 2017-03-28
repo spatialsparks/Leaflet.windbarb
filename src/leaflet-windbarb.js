@@ -17,6 +17,7 @@
 
     L.WindBarb.Icon = L.Icon.extend({
         options: {
+        	fillColor: '#2B85C7',
             pointRadius: 8,
             strokeWidth: 2,
             strokeLength: 15,
@@ -38,8 +39,8 @@
         },
 
         _createPoint: function() {
-            var svg, w,h, sw, r;
-            sw = this.options.strokeWidth, r = this.options.pointRadius;
+            var svg, w,h, sw, r, fc;
+            sw = this.options.strokeWidth, r = this.options.pointRadius, fc = this.options.fillColor;
             w = h = 2*sw+2*r;
             var xmlns = "http://www.w3.org/2000/svg";
             svg = document.createElementNS (xmlns, 'svg');
@@ -48,7 +49,7 @@
             var c = document.createElementNS (xmlns, 'circle');
                 c.setAttributeNS (null, 'stroke', '#010101');
                 c.setAttributeNS (null, 'stroke-width', sw);
-                c.setAttributeNS (null, 'fill', '#2B85C7');                
+                c.setAttributeNS (null, 'fill', fc);                
                 c.setAttributeNS (null, 'cx', w/2);
                 c.setAttributeNS (null, 'cy', h/2);
                 c.setAttributeNS (null, 'r',r);
