@@ -35,9 +35,14 @@ Generates a wind barb / wind arrow icon with the following options:
     strokeLength - Length of the main stroke, to which the barbs are connected; Default = 15
     barbSpaceing - Spacing between the barbs; Default = 5
     barbHeight - Height of 10kn adn 50kn barbs, 5kn barbs will be 50%; Default = 15
-    forceDir - if set to "true" the direction will always be shown, even if speed < 2.5kn; Default = false
+    forceDir - If set to "true" the direction will always be shown, even if speed < 2.5kn; Default = false
+    fillColor - Set the fill colour of the circle - Default = #2B85C7 (Thanks  Rickyars (https://github.com/rickyars))
             
 #### Changelog
+
+0.0.4 - March 30 2017
+
+    Rickyars kindly added option to change fill colour
 
 0.0.3 - January 30, 2017
     
