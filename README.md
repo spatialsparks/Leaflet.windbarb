@@ -13,7 +13,7 @@ Examples
 
 ![Image of wind barbs](https://github.com/JoranBeaufort/Leaflet.windbarb/blob/master/example/example.png)
 
-Example of changed colour:
+Example of changed colour (Kudos Rickyars):
 
 ![Image of wind barbs with colour change](https://github.com/JoranBeaufort/Leaflet.windbarb/blob/master/example/example%20colour.png)
 
