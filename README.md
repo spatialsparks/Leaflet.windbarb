@@ -43,7 +43,7 @@ Generates a wind barb / wind arrow icon with the following options:
             
 #### Changelog
 
-0.0.4 - March 30 2017
+0.0.4 - March 30, 2017
 
     Rickyars kindly added option to change fill colour
 
