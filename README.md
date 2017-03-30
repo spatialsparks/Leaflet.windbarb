@@ -13,6 +13,7 @@ Examples
 
 ![Image of wind barbs](https://github.com/JoranBeaufort/Leaflet.windbarb/blob/master/example/example.png)
 
+![Image of wind barbs with colour change](https://github.com/JoranBeaufort/Leaflet.windbarb/blob/master/example/example colour.png)
 
 #### Basic Usage
 
