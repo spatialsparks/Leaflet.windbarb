@@ -299,11 +299,19 @@
             s = this.options.speed,
             b= this._createBarbs(s)
             
-            var div = document.createElement('div');            
-            b.svg.style.transform = "rotate("+d+"deg)";
-            b.svg.style.MozTransform = "rotate("+d+"deg)";
-            b.svg.style.webkitTransform = "rotate("+d+"deg)";
-            b.svg.style.msTransform = "rotate("+d+"deg)";
+            var div = document.createElement('div'); 
+         
+            if(parseFloat(this.options.lat) < 0){
+                b.svg.style.transform = "rotate("+d+"deg) scaleY(-1)";
+                b.svg.style.MozTransform = "rotate("+d+"deg) scaleY(-1)";
+                b.svg.style.webkitTransform = "rotate("+d+"deg) scaleY(-1)";
+                b.svg.style.msTransform = "rotate("+d+"deg) scaleY(-1)";
+            }else{            
+                b.svg.style.transform = "rotate("+d+"deg)";
+                b.svg.style.MozTransform = "rotate("+d+"deg)";
+                b.svg.style.webkitTransform = "rotate("+d+"deg)";
+                b.svg.style.msTransform = "rotate("+d+"deg)";
+            }
             
             div.appendChild(b.svg);
 
