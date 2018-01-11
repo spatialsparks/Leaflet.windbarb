@@ -301,7 +301,7 @@
             
             var div = document.createElement('div'); 
          
-            if(parseFloat(this.options.lat) < 0){
+            if(this.options.rec){
                 b.svg.style.transform = "rotate("+d+"deg) scaleY(-1)";
                 b.svg.style.MozTransform = "rotate("+d+"deg) scaleY(-1)";
                 b.svg.style.webkitTransform = "rotate("+d+"deg) scaleY(-1)";
