@@ -3,7 +3,7 @@
  Leaflet.WindBarbs, a wind barb plugin for Leaflet.
  This plugin enables the automatic creation of 
  wind barb icons in Leaflet.
- version: 0.0.1
+ version: 0.0.5
 */
 
 /*global L*/
