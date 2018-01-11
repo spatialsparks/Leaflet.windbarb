@@ -301,7 +301,7 @@
             
             var div = document.createElement('div'); 
          
-            if(this.options.rec){
+            if(this.options.mirrorVel){
                 b.svg.style.transform = "rotate("+d+"deg) scaleY(-1)";
                 b.svg.style.MozTransform = "rotate("+d+"deg) scaleY(-1)";
                 b.svg.style.webkitTransform = "rotate("+d+"deg) scaleY(-1)";
