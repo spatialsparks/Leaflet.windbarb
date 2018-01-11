@@ -28,7 +28,7 @@ var marker = L.marker([lat,long], {icon: icon}).addTo(map);
 #### Example of how to mirror velocity indication on southern hemisphere
 ```
             if(latitude<0){
-              var icon = L.WindBarb.icon({rev: true, deg: p[3], speed: p[2]});  
+              var icon = L.WindBarb.icon({mirrorVel: true, deg: p[3], speed: p[2]});  
             }else{
               var icon = L.WindBarb.icon({lat: p[0], deg: p[3], speed: p[2]});
             }
@@ -51,7 +51,7 @@ Generates a wind barb / wind arrow icon with the following options:
     barbHeight - Height of 10kn adn 50kn barbs, 5kn barbs will be 50%; Default = 15
     forceDir - If set to "true" the direction will always be shown, even if speed < 2.5kn; Default = false
     fillColor - Set the fill colour of the circle - Default = #2B85C7 (Thanks  Rickyars (https://github.com/rickyars))
-    rev - mirrors velocity indication; default = false        
+    mirrorVel - mirrors velocity indication; default = false        
 #### Changelog
 
 0.0.5 - March 30, 2017
