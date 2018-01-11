@@ -20,10 +20,11 @@ Example of changed colour (Kudos Rickyars):
 #### Basic Usage
 
 ```
-var icon = L.WindBarb.icon({deg: 90, speed: 20, pointRadius: 5, strokeLength: 20});
+var icon = L.WindBarb.icon({lat: 40, deg: 90, speed: 20, pointRadius: 5, strokeLength: 20});
 var marker = L.marker([lat,long], {icon: icon}).addTo(map);
 
 ```
+* The lat is used to see if point is on north or south hemisphere
 
 To include the plugin, just use leaflet-windbarb.js from the src folder:
 
